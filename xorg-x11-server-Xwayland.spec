@@ -89,7 +89,7 @@ install -m 0755 %{SOURCE1} $RPM_BUILD_ROOT%{_bindir}/Xwayland
 
 
 %changelog
-* Mon Jul 10 2018 Benjamin Cooke <bcooke@freedomofknowledge.org> - 1.20.0-2
+* Tue Jul 10 2018 Benjamin Cooke <bcooke@freedomofknowledge.org> - 1.20.0-2
 - Add egl-wayland-devel build dependency
 
 * Fri Jun  1 2018 Benjamin Cooke <bcooke1@umbc.edu>
