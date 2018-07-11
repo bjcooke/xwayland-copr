@@ -1,6 +1,6 @@
 Name:           xorg-x11-server-Xwayland
 Version:        1.20.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Wayland X Server
 
 License:        MIT
@@ -12,7 +12,7 @@ BuildRequires: pkgconfig
 BuildRequires: wayland-devel
 BuildRequires: wayland-protocols-devel
 BuildRequires: pkgconfig(wayland-client) >= 1.3.0
-BuildRequires: egl-wayland >= 1.0.3
+BuildRequires: egl-wayland-devel >= 1.0.3
 BuildRequires: pkgconfig(epoxy) >= 1.5.2
 %if 0%{?fedora} > 24  || 0%{?rhel} > 7
 BuildRequires: pkgconfig(xshmfence) >= 1.1
@@ -89,5 +89,8 @@ install -m 0755 %{SOURCE1} $RPM_BUILD_ROOT%{_bindir}/Xwayland
 
 
 %changelog
+* Mon Jul 10 2018 Benjamin Cooke <bcooke@freedomofknowledge.org> - 1.20.0-2
+- Add egl-wayland-devel build dependency
+
 * Fri Jun  1 2018 Benjamin Cooke <bcooke1@umbc.edu>
 - First goatrope
